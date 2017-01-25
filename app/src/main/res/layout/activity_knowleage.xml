@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_knowleage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rtc.somruethaianusa.test.KnowleageActivity"
+    android:background="@drawable/rrr">
+
+    <TextView
+        android:text="สัตว์ป่า"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linKnowleage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="สัตว์ป่าสงวน"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:onClick="clickAnimal1"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="สัตว์ป่าคุ้มครอง"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:onClick="clickAnimal2"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="@string/title_know"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="       สัตว์ป่า คือ สัตว์ทุกชนิดไม่ว่า สัตว์บก สัตว์น้ำ สัตว์ปีก แมลง หรือแมง ซึ่งโดยภาพธรรมชาติย่อมเกิดและดำรงชีวิตอยู่ในป่าหรือในน้ำและให้หมายความรวมถึงไข่ของสัตว์ป่าเหล่านั้นทุกชนิดด้วย แต่ไม่หมายความรวมถึงสัตว์พาหนะที่ได้จดทะเบียนทำตั๋วรูปพรรณตามกฎหมาย ว่าด้วยสัตว์พาหนะแล้วและสัตว์พาหนะที่ได้มาจากการสืบพันธุ์ของสัตว์พาหนะ ดังกล่าว ตั้งแต่อดีตจนถึงปัจจุบัน ป่าไม้ อันเป็นแหล่งที่อยู่อาศัยของสัตว์ป่าได้ถูกทำลายลงไปมาก ตลอดจนการไล่ล่าของมนุษย์จึงทำให้ปริมาณสัตว์ป่ามีจำนวนลดน้อยลงทุกปีจนบางชนิดสูญพันธุ์บางชนิดก็ใกล้จะสูญพันธุ์เพื่อรักษาความสมดุลทางธรรมชาติจึงจำเป็นที่เราจะต้องช่วยกันอนุรักษ์สัตว์ป่าไว้โดยเร่งด่วน"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/pic_know1"
+                android:id="@+id/imageView2"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:text="     การเลี้ยงสัตว์ป่าในลักษณะเป็นสัตว์เศรษฐกิจ ช่วยลดการทำลายสัตว์ป่าได้"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="@string/contentv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView11"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="@string/contentv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/pic"
+                android:id="@+id/imageView5" />
+
+            <TextView
+                android:text="@string/contentv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ii"
+                android:id="@+id/imageView6" />
+
+            <TextView
+                android:text="@string/contentv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14" />
+
+            <TextView
+                android:text="@string/contentv7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/redg"
+                android:id="@+id/imageView7" />
+
+            <TextView
+                android:text="@string/contentv8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16" />
+
+            <TextView
+                android:text="@string/contentv9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView17"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="@string/contentv10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView18" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
