@@ -11,4 +11,9 @@
     tools:context="com.example.rtc.somruethaianusa.test.viewing"
     android:background="@drawable/bgviewing">
 
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button8" />
 </RelativeLayout>
